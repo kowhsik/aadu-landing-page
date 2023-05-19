@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Walkway.rar";
+}
+
+@font-face {
+  font-family: "Walkway.rar";
+  src: url(../src/asserts/images/Walkway.rar);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffbf6;
+  color: #c8c8c7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.wrapper {
+  width: 100%;
+}
+.wrapper .wrapper-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-one {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.wrapper-one .a-img {
+  padding-right: 66px;
+  max-width: 305px;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .wrapper-one .a-img {
+    width: 160px;
+  }
+}
+.wrapper-one .comin-soon-img {
+  max-width: 305px;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .wrapper-one .comin-soon-img {
+    width: 205px;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper-one {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .wrapper-one .comin-soon-img {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .wrapper .wrapper-two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: none;
+  }
+}
+@media (max-width: 660px) {
+  .wrapper .wrapper-two img {
+    max-width: 60px;
+  }
+}
+@media (max-width: 660px) {
+  .wrapper .wrapper-two h4 {
+    font-size: 14px;
+  }
+}
+.wrapper .wrapper-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper-two img {
+  max-width: 83px;
+  width: 100%;
+}
+.wrapper-two .content {
+  text-align: left;
+}
+.wrapper-two .content h4 {
+  padding-bottom: 15px;
+}
