@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Walkway.rar";
-  src: url(../src/asserts/images/Walkway.rar);
+  src: url(../src/asserts/images/Walkway_Bold.ttf);
 }
 
 body {
@@ -83,9 +83,19 @@ code {
     max-width: 60px;
   }
 }
+@media (max-width: 460px) {
+  .wrapper .wrapper-two img {
+    max-width: 43px;
+  }
+}
 @media (max-width: 660px) {
   .wrapper .wrapper-two h4 {
     font-size: 14px;
+  }
+}
+@media (max-width: 460px) {
+  .wrapper .wrapper-two h4 {
+    font-size: 12px;
   }
 }
 .wrapper .wrapper-two {
