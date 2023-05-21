@@ -2,49 +2,40 @@ import React from "react";
 import Image1 from "./asserts/images/Frame 2 1.svg";
 import Image2 from "./asserts/images/Coming Soon.svg";
 import logo from "./asserts/images/logo.svg";
-import { AnimatePresence, motion } from "framer-motion";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Image3 from "./asserts/images/WeGotYou.png";
+import Image4 from "./asserts/images/OurClients.png";
+
 import "./App.css";
 
-const slides = [
-  {
-    background: Image1,
-  },
-  {
-    background: Image1,
-  },
-];
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
 
 function App() {
   return (
     <>
-      {/* <AnimatePresence mode="wait">
-        {currentSlide === index && (
-          <motion.div
-            className="slide-card"
-            key={index.toString()}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.div
-              className="card-background"
-              style={{ backgroundImage: `url(${slide.background})` }}
-              initial={{ scale: 1 }}
-              animate={{ scale: 1.2 }}
-              transition={{ duration: 30 }}
-            ></motion.div>
-            <motion.div
-              className="card-content"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 3 }}
-            >
-              
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence> */}
-      <div className="App">
+      <div className="slider-container">
+        <Slider {...settings}>
+          <div>
+            <img src={Image1} alt="" className="a-img" />
+            <img src={Image2} alt="" className="comin-soon-img" />
+          </div>
+          <div>
+            <img src={Image3} alt="" className="we go tou" />
+          </div>
+          <div>
+            <img src={Image4} alt="" className="our Clients" />
+          </div>
+        </Slider>
+      </div>
+      {/* <div className="App">
         <div className="wrapper">
           <div className="wrapper-one">
             <img src={Image1} alt="" className="a-img" />
@@ -58,7 +49,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
