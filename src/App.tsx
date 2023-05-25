@@ -7,6 +7,8 @@ import Slider from "react-slick";
 import Image3 from "./asserts/images/WeGotYou.png";
 import Image4 from "./asserts/images/OurClients.png";
 import Image5 from "./asserts/images/Middle-media.png";
+import Image6 from "./asserts/images/We've got you.-1.png";
+import Image7 from "./asserts/images/Our Clients-1.png";
 
 import "./App.css";
 
@@ -34,15 +36,21 @@ const App: React.FC = () => {
               />
             </div>
             <div className="media-img">
-              <img src={Image5} alt="" />
+              <img src={Image5} alt="" className="media-img" />
             </div>
           </div>
 
           <div>
-            <img src={Image3} alt="" className="weGoYou" />
+            {/* <img src={Image3} alt="" className="weGoYou" /> */}
+            {/* <img src={Image6} alt="" className="weGot" /> */}
+            <img
+              srcSet={`${Image3} 500w, ${Image6} 1000w`}
+              className="weGoYou"
+            />
           </div>
           <div>
             <img src={Image4} alt="" className="ourClients" />
+            {/* <img src={Image7} alt="" className="clients" /> */}
           </div>
         </Slider>
       </div>

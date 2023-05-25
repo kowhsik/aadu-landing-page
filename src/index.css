@@ -46,6 +46,9 @@ code {
 .image-container .a-img {
   width: 531px;
 }
+.image-container .weGot {
+  display: none;
+}
 @media (max-width: 700px) {
   .image-container .a-img {
     width: 300px;
