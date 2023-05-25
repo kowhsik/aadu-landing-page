@@ -52,7 +52,7 @@ const App: React.FC = () => {
         </div>
         <div className="content">
           <h4>hello@aadu.agency</h4>
-          <h5>6/170, Thotiyankadu, 639136 IN</h5>
+          <h5 style={{ color: "grey" }}>6/170, Thotiyankadu, 639136 IN</h5>
         </div>
       </div>
     </>
