@@ -51,7 +51,7 @@ const App: React.FC = () => {
           <img src={logo} alt="" />
         </div>
         <div className="content">
-          <h4 style={{ color: "	#B8B8B8" }}>hello@aadu.agency</h4>
+          <h4 style={{ color: "#D0D0D0" }}>hello@aadu.agency</h4>
           <h5 style={{ color: "#F0F0F0" }}>6/170, Thotiyankadu, 639136 IN</h5>
         </div>
       </div>
