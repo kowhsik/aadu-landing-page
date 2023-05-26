@@ -75,17 +75,17 @@ code {
   }
 }
 .ourClients {
-  width: 550px;
+  width: 100%;
   object-fit: contain;
 }
 @media (max-width: 700px) {
   .ourClients {
-    width: 350px;
+    width: 100%;
   }
 }
 @media (max-width: 420px) {
   .ourClients {
-    width: 200px;
+    width: 100%;
   }
 }
 .wrapper-two {
@@ -153,4 +153,14 @@ code {
   .media-img img {
     width: 160px;
   }
+}
+
+picture source {
+  width: 100%;
+  height: auto;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
 }
