@@ -4,11 +4,11 @@ import logo from "./asserts/images/logo.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Image3 from "./asserts/images/WeGotYou.png";
-import Image4 from "./asserts/images/OurClients.png";
+import Image3 from "./asserts/images/We've got you..png";
+import Image4 from "./asserts/images/Our Clients (1).png";
 import Image5 from "./asserts/images/Middle-media.png";
-import Image6 from "./asserts/images/We've got you.-1.png";
-import Image7 from "./asserts/images/Our Clients-1.png";
+// import Image6 from "./asserts/images/We've got you.-1.png";
+// import Image7 from "./asserts/images/Our Clients-1.png";
 
 import "./App.css";
 
@@ -41,12 +41,12 @@ const App: React.FC = () => {
           </div>
 
           <div>
-            {/* <img src={Image3} alt="" className="weGoYou" /> */}
+            <img src={Image3} alt="" className="weGoYou" />
             {/* <img src={Image6} alt="" className="weGot" /> */}
-            <img
+            {/* <img
               srcSet={`${Image3} 500w, ${Image6} 1000w`}
               className="weGoYou"
-            />
+            /> */}
           </div>
           <div>
             <img src={Image4} alt="" className="ourClients" />
