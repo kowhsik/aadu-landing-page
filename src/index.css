@@ -97,6 +97,10 @@ code {
   align-items: center;
   gap: 29px;
 }
+.content a {
+  text-decoration: none;
+  color: red;
+}
 @media (max-width: 700px) {
   .wrapper-two {
     gap: 14px;
@@ -108,7 +112,7 @@ code {
   }
 }
 .wrapper-two img {
-  width: 83px;
+  width: 53px;
   object-fit: contain;
 }
 @media (max-width: 700px) {
@@ -125,7 +129,7 @@ code {
   }
 }
 .content h4 {
-  font-size: 25px;
+  font-size: 20px;
 }
 @media (max-width: 700px) {
   .content h4 {
@@ -134,7 +138,7 @@ code {
 }
 .content h5 {
   font-size: 15px;
-  margin-top: 19px;
+  margin-top: 15px;
 }
 @media (max-width: 700px) {
   .content h5 {
