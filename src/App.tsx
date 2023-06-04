@@ -32,7 +32,7 @@ const App: React.FC = () => {
       window.location.reload();
     };
 
-    const interval = setInterval(refreshPage, 5000); // Refresh every 1 minute
+    const interval = setInterval(refreshPage, 60 * 1000); // Refresh every 1 minute
 
     return () => {
       clearInterval(interval); // Clear the interval when the component unmounts
@@ -87,7 +87,7 @@ const App: React.FC = () => {
         <div className="content">
           <h4>
             <a style={{ color: "#E8E8E8" }} href="mailto:freddy@aadu.agency">
-              hello@aadu.agency
+              freddy@aadu.agency
             </a>
           </h4>
           <h5 style={{ color: "#F0F0F0" }}>6/170, Thotiyankadu, 639136 IN</h5>
