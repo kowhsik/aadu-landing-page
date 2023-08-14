@@ -34,6 +34,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (audioRef.current) {
+      audioRef.current.volume = 0.3;
       if (!isMuted) {
         audioRef.current.play();
       } else {
@@ -96,11 +97,11 @@ const App: React.FC = () => {
         </div>
         <div className="content">
           <h4>
-            <a style={{ color: "#E8E8E8" }} href="mailto:freddy@aadu.agency">
+            <a style={{ color: "rgb(180,177,177)" }} href="mailto:freddy@aadu.agency">
               freddy@aadu.agency
             </a>
           </h4>
-          <h5 style={{ color: "#F0F0F0" }}>6/170, Thotiyankadu, 639136 IN</h5>
+          <h5 style={{ color: "rgb(180,177,177)" }}>6/170, Thotiyankadu, 639136 IN</h5>
         </div>
       </div>
 
@@ -110,7 +111,7 @@ const App: React.FC = () => {
           Your browser does not support the audio element.
         </audio>
         <button onClick={() => setIsMuted(!isMuted)}>
-          {isMuted ? <VolumeIcon /> : <MuteIcon />}
+          {!isMuted ? <VolumeIcon /> : <MuteIcon />}
         </button>
       </div>
     </>
