@@ -5,13 +5,19 @@ import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Image1 from "./asserts/images/Middle.png";
+// import Image1 from "./asserts/images/Middle.png";
 import logo from "./asserts/images/logo.svg";
-import Image3 from "./asserts/images/We've got you..png";
-import Image4 from "./asserts/images/Our Clients (1).png";
-import Image5 from "./asserts/images/Middle-media.png";
-import Image6 from "./asserts/images/wegotyou2.png";
-import Image7 from "./asserts/images/our-clients.png";
+// import Image3 from "./asserts/images/We've got you..png";
+// import Image4 from "./asserts/images/Our Clients (1).png";
+// import Image5 from "./asserts/images/Middle-media.png";
+// import Image6 from "./asserts/images/wegotyou2.png";
+// import Image7 from "./asserts/images/our-clients.png";
+import { ReactComponent as Image1 } from "./asserts/images/H1.svg";
+import { ReactComponent as Image2 } from "./asserts/images/H2.svg";
+import { ReactComponent as Image3 } from "./asserts/images/H3.svg";
+import { ReactComponent as Image4 } from "./asserts/images/V1.svg";
+import { ReactComponent as Image5 } from "./asserts/images/V2.svg";
+import { ReactComponent as Image6 } from "./asserts/images/V1.svg";
 import { ReactComponent as VolumeIcon } from "./asserts/icons/volume-2.svg";
 import { ReactComponent as MuteIcon } from "./asserts/icons/volume-x.svg";
 
@@ -59,34 +65,50 @@ const App: React.FC = () => {
       <div className="slider-container">
         <a href="https://bit.ly/45zwtTT" target="_blank" rel="noreferrer">
           <Slider {...settings}>
-            <div className="image-container">
+            {/* <div className="image-container">
               <div>
                 <img src={Image1} alt="" className="a-img" style={{ margin: "94px 40px" }} />
               </div>
               <div className="media-img">
                 <img src={Image5} alt="" className="media-img" />
               </div>
-            </div>
+            </div> */}
 
-            <div className="image-container">
+            {/* <div className="image-container">
               <picture>
                 <source media="(max-width:650px)" srcSet={Image6} />
                 <img src={Image3} alt="Flowers" />
               </picture>
-              {/* <img src={Image3} alt="" className="weGoYou" /> */}
-              {/* <img src={Image6} alt="" className="weGot" /> */}
-              {/* <img
-              srcSet={`${Image3} 500w, ${Image6} 1000w`}
-              className="weGoYou"
-            /> */}
+            </div> */}
+            <div className="image-container">
+              <div className="image-card">
+                <div className="web">
+                  <Image1 />
+                </div>
+                <div className="mob">
+                  <Image4 />
+                </div>
+              </div>
             </div>
             <div className="image-container">
-              <picture>
-                <source media="(max-width:650px)" srcSet={Image7} />
-                <img src={Image4} alt="Flowers" />
-              </picture>
-              {/* <img src={Image4} alt="" className="ourClients" /> */}
-              {/* <img src={Image7} alt="" className="clients" /> */}
+              <div className="image-card">
+                <div className="web">
+                  <Image2 />
+                </div>
+                <div className="mob">
+                  <Image5 />
+                </div>
+              </div>
+            </div>
+            <div className="image-container">
+              <div className="image-card">
+                <div className="web">
+                  <Image3 />
+                </div>
+                <div className="mob">
+                  <Image6 />
+                </div>
+              </div>
             </div>
           </Slider>
         </a>
