@@ -63,7 +63,7 @@ const App: React.FC = () => {
   return (
     <>
       <div className="slider-container">
-        <a href="https://bit.ly/45zwtTT" target="_blank" rel="noreferrer">
+        <a href="https://b.link/u2vu96" target="_blank" rel="noreferrer">
           <Slider {...settings}>
             {/* <div className="image-container">
               <div>
@@ -119,8 +119,8 @@ const App: React.FC = () => {
         </div>
         <div className="content">
           <h4>
-            <a style={{ color: "rgb(180,177,177)" }} href="mailto:freddy@aadu.agency">
-              freddy@aadu.agency
+            <a style={{ color: "rgb(180,177,177)" }} href="mailto:hello@aadu.agency">
+              hello@aadu.agency
             </a>
           </h4>
           <h5 style={{ color: "rgb(180,177,177)" }}>6/170, Thotiyankadu, 639136 IN</h5>
