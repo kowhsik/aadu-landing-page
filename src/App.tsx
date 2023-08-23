@@ -17,7 +17,7 @@ import { ReactComponent as Image2 } from "./asserts/images/H2.svg";
 import { ReactComponent as Image3 } from "./asserts/images/H3.svg";
 import { ReactComponent as Image4 } from "./asserts/images/V1.svg";
 import { ReactComponent as Image5 } from "./asserts/images/V2.svg";
-import { ReactComponent as Image6 } from "./asserts/images/V1.svg";
+import Image6 from "./asserts/images/V3.svg";
 import { ReactComponent as VolumeIcon } from "./asserts/icons/volume-2.svg";
 import { ReactComponent as MuteIcon } from "./asserts/icons/volume-x.svg";
 
@@ -106,7 +106,7 @@ const App: React.FC = () => {
                   <Image3 />
                 </div>
                 <div className="mob">
-                  <Image6 />
+                  <img src={Image6} alt="" />
                 </div>
               </div>
             </div>
